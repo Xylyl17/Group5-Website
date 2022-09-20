@@ -1,0 +1,412 @@
+<!doctype html>
+<html> 
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1"> 
+  <title>Iyay</title> 
+  <link rel="stylesheet" href="website.css"> 
+ <style type="text/css" id="dcoder_stylesheet">* {
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+.hero {
+  height: 25vh;
+  width: 100%;
+  background-color: #110e1e;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 40px;
+  padding-left: 8%;
+  padding-right: 8%;
+}
+
+.logo {
+  color: white;
+  font-size: 17px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+span {
+  color: #f9004d;
+}
+nav ul {
+  margin-left: 175px;
+}
+nav ul li {
+  list-style-type: none;
+  display: inline-block;
+  padding: 10px 13px;
+}
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+nav ul li a:hover {
+  color: #f9004d;
+  transform: .4s;
+}
+.btn {
+  background-color: #f9004d;
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 8px 17px;
+  border-radius: 27px;
+  transition: transform .4s;
+}
+.btn:hover {
+  transform: scale(1.2);
+}
+.content {
+  position: absolute;
+  top: 17%;
+  left: 8%;
+  transform: translateY(-50%);
+}
+h1 {
+  color: #fff;
+  margin: 20px 0 20px;
+  font-size: 50px;
+}
+h3 {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 25px;
+  margin-left: 0;
+}
+h4 {
+  color: #fcfc;
+  letter-spacing: 2px;
+  font-size: 20px
+}
+.newsletter form{
+  width: 380px;
+  max-width: 100%;
+  position: relative;
+}
+.newsletter form #email:first-child {
+  display: inline-block;
+  width: 100%;
+  padding: 14px 130px 14px 15px;
+  border: 2px solid #f9004d;
+  outline: none;
+  border-radius: 27px;
+}
+.newsletter form #submit:last-child {
+  position: absolute;
+  display: inline-block;
+  outline: none;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 27px;
+  background-color: #f9004d;
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 0px 5px #000,0px 0px 15px #858585;
+  top: 6px;
+  right: 6px;
+}
+/*Login*/
+.container {
+  position: relative;
+  right: 128px;
+  font-family: sans-serif;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+}
+
+.card {
+  width: 195px;
+  height: 317px;
+  margin-top: 30px;
+  box-shadow: 0 0 15px 10px rgb(255, 77, 77);
+  perspective: 1000px;
+  border-radius: 14px
+}
+.card-front {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-image: linear-gradient(rgba(100,0,0,0.8),rgba(100,0,0,0.8)),url('ren.jpeg');
+  padding: 18px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  backface-visibility: hidden;
+}
+.card-front h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.input-box {
+  display: flex;
+  width: 150px;
+  margin: 10px 5px;
+  padding: 3px 10px;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #f9004d;
+  border-radius: 27px;
+}
+.submit-btn {
+  margin-top: 1px;
+  margin-left: 50px
+}
+.submit-new {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.submit {
+  display: inline-block;
+  color: #f9004d;
+  text-decoration: none;
+  font-size: 15px;
+  margin-top: 30px;
+  margin-left: 29px;
+}
+.check {
+  display: inline-block;
+  font-size: 10px;
+  margin-left: 20px;
+}
+.span {
+  color: white;
+  margin-left: 4px;
+}
+a {
+  color: #f9004d;
+  text-decoration: none;
+}
+.submit {
+  color: white;
+}
+/*about*/
+.about {
+  width: 100%;
+  height: 25vh;
+  padding: 100px 0px;
+  background-color: #110e1e;
+}
+
+.about img {
+  height: 15vh;
+  width: 200px;
+  margin-left: 10px;
+}
+.about-text {
+  width: 370px;
+}
+.main {
+  width: 1120px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.about-text h2 {
+  color: white;
+  font-size: 25px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.about-text h5 {
+  color: white;
+  letter-spacing: 1px;
+  font-size: 13px;
+  text-transform: capitalize;
+}
+.about-text p {
+  color: white;
+  font-size: 13px;
+  letter-spacing: 1px;
+  line-height: 20px;
+  margin-bottom: 6px
+}
+button {
+  background-color: #f9004d;
+  color: #fff;
+  margin-top: 8px;
+  font-size: 12px;
+  border: 2px solid transparent;
+  border-radius: 27px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 7px 13px;
+  transition: .4s;
+}
+button:hover {
+  background-color: transparent;
+  border: 2px solid #f9004d;
+  cursor: pointer;
+}
+
+/*skills*/
+
+.skills {
+  height: 25vh;
+  width: 100%;
+  padding: 8% 0px;
+  background-color: #110e1e;
+}#42445A
+
+.skills h2 {
+  color: white;
+  font-size: 27px;
+  width: 500px;
+  margin: 10px auto;
+  text-align: center;
+}
+.skill-card {
+  display: inline-block;
+  align-content: center;
+  justify-content: center;
+  text-align: center;
+  margin-left: 120px;
+}
+.cards {
+  width: 170px;
+  height: 250px;
+  background-color: #f9004d;
+  border-radius: 10px;
+}
+  
+
+.pra p {
+  color: #fcfc;
+  font-size: 13px;
+  font-weight: bold;
+  width: 150px;
+  text-align: center;
+  line-height: 18px;
+  margin-left: 10px;
+  margin-bottom: 40px;
+}
+.read {
+  background-color: #000;
+  color: #fff;
+  margin-top: 8px;
+  font-size: 12px;
+  border: 2px solid transparent;
+  border-radius: 27px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 7px 13px;</style></head> 
+ <body> <!-- Section header --> 
+  <div class="hero"> 
+   <nav> 
+    <div class="logo"> 
+     <h2>Xylyl<span>Joyce</span></h2> 
+    </div> 
+    <ul> 
+     <li><a href="#">Home</a></li> 
+     <li><a href="#">About</a></li> 
+     <li><a href="#">Skills</a></li> 
+     <li><a href="#">Services</a></li> 
+     <li><a href="#">Contact</a></li> 
+    </ul> <a href="#" class="btn">Join</a> 
+   </nav> 
+   <div class="content"> 
+    <h4>Hello , My name is</h4> 
+    <h1>Xylyl<span>Joyce Jimenez</span></h1> 
+    <h3>I'am a Beginner Web Developer</h3> 
+    <div class="newsletter"> 
+     <form> 
+      <input type="email" name="email" id="email" placeholder="Enter Your Email" required> 
+      <input type="submit" name="submit" id="submit" value="Let's Start" required> 
+     </form> 
+    </div> 
+   </div> 
+   <div class="container"> 
+    <div class="card"> 
+     <div class="card-front"> 
+      <h2>Login</h2> 
+      <form> 
+       <input type="email" class="input-box" placeholder="Enter Your Email" required> 
+       <input type="password" class="input-box" placeholder="Enter Your Password" required> <button type="submit" class="submit-btn">Login</button> 
+       <br> 
+       <input type="checkbox" class="check"><span class="span">Remember Me</span> 
+       <br> <button type="button" class="submit-new">I'm New Here</button> <a href="#" class="submit">Forgot Password</a> 
+      </form> 
+     </div> 
+    </div> 
+   </div> 
+  </div> <!-- About Me--> 
+  <section class="about"> 
+   <div class="main"> 
+    <img src="iyay.jpeg"> 
+    <div class="about-text"> 
+     <h2 id="jab">About </h2> 
+     <h5>Web Dev , Designer<span> &amp; Programmer</span> </h5> 
+     <p>Hi , I'am student </p> <button type="button">Learn More</button> 
+    </div> 
+   </div> 
+  </section> <!-- Skills --> 
+  <section class="skills"> 
+   <div class="title"> 
+    <h2>My Skills</h2> 
+   </div> 
+   <div class="skill-card"> 
+    <div class="cards"> 
+     <div class="pra"> 
+      <h5>Web Dev</h5> 
+      <p>I learn JavaScript in 1 min because i'm the mega Mind</p> 
+      <p style="text-align: center;"> </p> 
+      <div class="weh"> <a class="read" href="#">Read More</a> 
+      </div> 
+      <p></p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="skill-card"> 
+    <div class="cards"> 
+     <div class="pra"> 
+      <h5>JavaScript</h5> 
+      <p>I learn JavaScript in 1 min because i'm the mega Mind</p> 
+      <p style="text-align: center;"> </p> 
+      <div class="weh"> <a class="read" href="#">Read More</a> 
+      </div> 
+      <p></p> 
+     </div> 
+    </div> 
+   </div> 
+   <div class="skill-card"> 
+    <div class="cards"> 
+     <div class="pra"> 
+      <h5>Java</h5> 
+      <p>I learn JavaScript in 1 min because i'm the mega Mind</p> 
+      <p style="text-align: center;"> </p> 
+      <div class="weh"> <a class="read" href="#">Read More</a> 
+      </div> 
+      <p></p> 
+     </div> 
+    </div> 
+   </div> 
+  </section> 
+  <div class="contact-me"> 
+   <p>Let me Guide you to Make better Website.</p> <a class="button-new" href="#">Hire Me</a> 
+  </div> 
+  <footer> 
+   <p>-------</p> 
+   <p>For More Details contact me in social Media.</p> <a href="#">click here</a> 
+   <p>CopyRight@ By ------</p> 
+  </footer> 
+  <script>
+    const type = document.getElementById("jab");
+    type.innerHTML = "About Me";
+  </script> 
+ 
+</body></html>
